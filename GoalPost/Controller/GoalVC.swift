@@ -20,6 +20,5 @@ class GoalVC: UIViewController {
     @IBAction func addGoalsButtonPressed(_ sender: Any) {
     }
     
-    
 }
 
