@@ -20,6 +20,7 @@
 		D081AF231FD99FAB00E7EE82 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D081AF221FD99FAB00E7EE82 /* UIViewExt.swift */; };
 		D081AF251FD9A3AF00E7EE82 /* UIButtonExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D081AF241FD9A3AF00E7EE82 /* UIButtonExt.swift */; };
 		D081AF271FD9BE4500E7EE82 /* FinishGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D081AF261FD9BE4500E7EE82 /* FinishGoalVC.swift */; };
+		D081AF2A1FD9F38F00E7EE82 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D081AF291FD9F38F00E7EE82 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		D081AF221FD99FAB00E7EE82 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		D081AF241FD9A3AF00E7EE82 /* UIButtonExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExt.swift; sourceTree = "<group>"; };
 		D081AF261FD9BE4500E7EE82 /* FinishGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishGoalVC.swift; sourceTree = "<group>"; };
+		D081AF291FD9F38F00E7EE82 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 		D08145C91FD90CCB00A6234C /* GoalPost */ = {
 			isa = PBXGroup;
 			children = (
+				D081AF281FD9F37000E7EE82 /* Utilities */,
 				D08145E21FD9141200A6234C /* Enums */,
 				D08145E11FD913FE00A6234C /* Extensions */,
 				D08145E01FD913F700A6234C /* View */,
@@ -118,6 +121,14 @@
 				D081AF1C1FD96A7000E7EE82 /* GoalType.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		D081AF281FD9F37000E7EE82 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D081AF291FD9F38F00E7EE82 /* Constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +212,7 @@
 				D081AF211FD9936700E7EE82 /* UIViewControllerExt.swift in Sources */,
 				D081AF251FD9A3AF00E7EE82 /* UIButtonExt.swift in Sources */,
 				D081AF271FD9BE4500E7EE82 /* FinishGoalVC.swift in Sources */,
+				D081AF2A1FD9F38F00E7EE82 /* Constants.swift in Sources */,
 				D08145D31FD90CCB00A6234C /* GoalPost.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

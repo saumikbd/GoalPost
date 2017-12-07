@@ -395,6 +395,9 @@
                                         <state key="normal" title="CREATE GOAL">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="createGoalButtonTapped:" destination="NyA-J1-vcb" eventType="touchUpInside" id="WXh-Ig-NOK"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -422,6 +425,7 @@
                     </view>
                     <connections>
                         <outlet property="createGoalButton" destination="TEX-dg-PcW" id="Bga-Dk-lwI"/>
+                        <outlet property="pointsLabel" destination="VsJ-mh-Kgi" id="WpW-mM-ycg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YAi-f7-p1L" userLabel="First Responder" sceneMemberID="firstResponder"/>
