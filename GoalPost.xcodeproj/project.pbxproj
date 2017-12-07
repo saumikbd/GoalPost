@@ -16,6 +16,7 @@
 		D08145E41FD921E500A6234C /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08145E31FD921E500A6234C /* GoalCell.swift */; };
 		D081AF1D1FD96A7000E7EE82 /* GoalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D081AF1C1FD96A7000E7EE82 /* GoalType.swift */; };
 		D081AF1F1FD988CB00E7EE82 /* CreateGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D081AF1E1FD988CB00E7EE82 /* CreateGoalVC.swift */; };
+		D081AF211FD9936700E7EE82 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D081AF201FD9936700E7EE82 /* UIViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		D08145E31FD921E500A6234C /* GoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCell.swift; sourceTree = "<group>"; };
 		D081AF1C1FD96A7000E7EE82 /* GoalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalType.swift; sourceTree = "<group>"; };
 		D081AF1E1FD988CB00E7EE82 /* CreateGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalVC.swift; sourceTree = "<group>"; };
+		D081AF201FD9936700E7EE82 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		D08145E11FD913FE00A6234C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				D081AF201FD9936700E7EE82 /* UIViewControllerExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				D081AF1D1FD96A7000E7EE82 /* GoalType.swift in Sources */,
 				D08145CD1FD90CCB00A6234C /* GoalVC.swift in Sources */,
 				D08145CB1FD90CCB00A6234C /* AppDelegate.swift in Sources */,
+				D081AF211FD9936700E7EE82 /* UIViewControllerExtension.swift in Sources */,
 				D08145D31FD90CCB00A6234C /* GoalPost.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
