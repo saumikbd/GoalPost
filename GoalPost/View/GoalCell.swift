@@ -14,7 +14,7 @@ class GoalCell: UITableViewCell {
     @IBOutlet weak var goalType: UILabel!
     @IBOutlet weak var goalAmount: UILabel!
     
-    func updateCell(description: String, type: goalType, amount: Int){
+    func updateCell(description: String, type: GoalType, amount: Int){
         self.goalDescription.text = description
         self.goalType.text = type.rawValue
         self.goalAmount.text = String(amount)
