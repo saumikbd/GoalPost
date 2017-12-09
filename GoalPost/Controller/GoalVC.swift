@@ -68,17 +68,41 @@ extension GoalVC: UITableViewDelegate, UITableViewDataSource {
         return .none
     }
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-        let delete = UITableViewRowAction(style: UITableViewRowActionStyle.default, title: "DELETE") { (rowAction, indexPath) in
+        let deleteAction = UITableViewRowAction(style: UITableViewRowActionStyle.default, title: "DELETE") { (rowAction, indexPath) in
             self.removeGoal(atIndexPath: indexPath)
             self.fetchGoalObjects()
             tableView.deleteRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
         }
-        delete.backgroundColor = #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1)
-        return [delete]
+        let addAction = UITableViewRowAction(style: UITableViewRowActionStyle.normal, title: "ADD 1") { (rowAction, indexPath) in
+            self.setGoalProgress(atIndexPath: indexPath)
+            self.tableView.reloadRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
+        }
+        
+        addAction.backgroundColor = #colorLiteral(red: 0.9597846866, green: 0.6503693461, blue: 0.1371207833, alpha: 1)
+        deleteAction.backgroundColor = #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1)
+        if(goals[indexPath.row].goalCompletionValue==goals[indexPath.row].goalProgress){
+            return [deleteAction]
+        }
+        return [deleteAction, addAction]
     }
 }
 
 extension GoalVC {
+    func setGoalProgress(atIndexPath indexPath: IndexPath){
+        guard let managedContext = appDelegate?.persistentContainer.viewContext else {return}
+        let selectedGoal = goals[indexPath.row]
+        if selectedGoal.goalProgress < selectedGoal.goalCompletionValue{
+            selectedGoal.goalProgress = selectedGoal.goalProgress + 1
+        } else {
+            return
+        }
+        do{
+            try managedContext.save()
+        }catch{
+            debugPrint(error.localizedDescription)
+        }
+        
+    }
     
     func removeGoal(atIndexPath indexPath: IndexPath){
         guard let managedCotext = appDelegate?.persistentContainer.viewContext else {return}
