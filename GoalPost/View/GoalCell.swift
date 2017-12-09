@@ -14,10 +14,10 @@ class GoalCell: UITableViewCell {
     @IBOutlet weak var goalType: UILabel!
     @IBOutlet weak var goalAmount: UILabel!
     
-    func updateCell(description: String, type: GoalType, amount: Int){
-        self.goalDescription.text = description
-        self.goalType.text = type.rawValue
-        self.goalAmount.text = String(amount)
+    func updateCell(goal: Goal){
+        self.goalDescription.text = goal.goalDescription
+        self.goalType.text = goal.goalType
+        self.goalAmount.text = String(goal.goalCompletionValue)
     }
     
 }
